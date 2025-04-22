@@ -4,6 +4,7 @@ A CLI tool written in **Rust** and **JavaScript** for compressing and decompress
 
 ## 🚀 Features
 
+
 - Compression and decompression via CLI
 - Supports RLE and LZ
 - Dockerized builds
