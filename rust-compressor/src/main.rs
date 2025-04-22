@@ -16,6 +16,7 @@ fn main() {
         .arg(Arg::new("rle").long("rle").action(clap::ArgAction::SetTrue).conflicts_with("lz"))
         .arg(Arg::new("lz").long("lz").action(clap::ArgAction::SetTrue))
         .get_matches();
+    
 
     let mode = matches.get_one::<String>("mode").unwrap();
     let input_path = matches.get_one::<String>("input").unwrap();
