@@ -12,6 +12,7 @@ pub fn compress(data: &[u8]) -> Vec<u8> {
             while i + k < data.len() && data[j + k] == data[i + k] && k < 255 {
                 k += 1;
             }
+            
 
             if k > match_len {
                 match_len = k;
