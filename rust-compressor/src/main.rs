@@ -40,3 +40,4 @@ fn main() {
     let mut output_file = File::create(output_path).expect("Failed to create output file");
     output_file.write_all(&result).expect("Failed to write output");
 }
+
