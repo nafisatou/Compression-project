@@ -15,3 +15,4 @@ WORKDIR /app
 COPY --from=builder /app/target/release/rust-compressor /usr/local/bin/rust-compressor
 
 ENTRYPOINT ["/usr/local/bin/rust-compressor"]
+
