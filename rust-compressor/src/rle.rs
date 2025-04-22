@@ -5,7 +5,7 @@ pub fn compress(data: &[u8]) -> Vec<u8> {
     while i < data.len() {
         let byte = data[i];
         let mut count = 1;
-        
+
 
         while i + count < data.len() && data[i + count] == byte && count < 255 {
             count += 1;
@@ -18,6 +18,7 @@ pub fn compress(data: &[u8]) -> Vec<u8> {
 
     out
 }
+
 
 pub fn decompress(data: &[u8]) -> Vec<u8> {
     let mut out = vec![];
