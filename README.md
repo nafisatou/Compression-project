@@ -1,23 +1,6 @@
 # Compression-project
 A compression tool implementing Run-Length Encoding (RLE) and Simplified LZ77 algorithms in both Rust and JavaScript.
-Project Structure
 
-compression-project/
-├── rust-compressor/
-│   ├── src/
-│   │   ├── main.rs
-│   │   ├── rle.rs
-│   │   └── lz.rs
-│   ├── Cargo.toml
-│   └── Dockerfile
-├── js-compressor/
-│   ├── index.js
-│   ├── rle.js
-│   ├── lz.js
-│   └── package.json
-    ├── test/
-│   └── Dockerfile
-└── README.md
 
 To try out this project to test it functionalities, do;
 
@@ -29,9 +12,9 @@ cd <repo-name>
 
 To pull the rust and js-compressor images, run the two commands below;
 
-docker pull ghcr.io/nafisatou/rust-compressor:latest
+```docker pull ghcr.io/nafisatou/rust-compressor:latest```
 
-docker pull ghcr.io/nafisatou/js-compressor:latest
+```docker pull ghcr.io/nafisatou/js-compressor:latest```
 
 To create aliases for easier use in the compression process, do;
 
